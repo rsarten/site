@@ -4,7 +4,7 @@
       <HeaderComponent/>
     </header>
     
-    <HelloWorld msg="It's working!!"/>
+    <BodyComponent/>
 
     <footer>
       <FooterComponent/>
@@ -13,15 +13,15 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import HeaderComponent from './components/HeaderComponent.vue'
+import BodyComponent from './components/BodyComponent.vue'
 import FooterComponent from './components/FooterComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    'HelloWorld': HelloWorld,
     'HeaderComponent': HeaderComponent,
+    'BodyComponent': BodyComponent,
     'FooterComponent': FooterComponent
   }
 }
@@ -32,9 +32,9 @@ export default {
   font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /*text-align: left;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 60px;*/
   width: 100%;
 }
 
