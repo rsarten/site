@@ -1,12 +1,23 @@
 <template>
     <div>
-        <h1>Something</h1>
-        <p>I'll add a nav bar and then main content sections</p>
+        <nav>
+            <NavBarComponent/>
+        </nav>
+        <div>
+            <ContentComponent/>
+        </div>
     </div>
 </template>
 
 <script>
+import NavBarComponent from './NavBarComponent'
+import ContentComponent from './ContentComponent'
+
 export default {
-    name: 'BodyComponent'
+    name: 'BodyComponent',
+    components: {
+        'NavBarComponent': NavBarComponent,
+        'ContentComponent': ContentComponent
+    }
 }
 </script>

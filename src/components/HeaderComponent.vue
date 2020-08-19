@@ -2,7 +2,7 @@
   <div class="banner">
     <div class="banner-block">
       <h1>rorysarten.co.nz</h1>
-      <p>I am Rory Sarten.  This is my project server where I testing ideas, run web-crawlers and host applications.</p>
+      <p>I am Rory Sarten.  This is my project server where I test ideas, run web-crawlers and host applications.</p>
     </div>
     <div class="banner-block">
       <img alt="Vue logo" src="../assets/networking-538.png" style="width:300px;height:150px">
