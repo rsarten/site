@@ -1,9 +1,6 @@
 # site
 
-## Project setup
-```
-npm install
-```
+Create simple single page application for my site
 
 ### Compiles and hot-reloads for development
 ```

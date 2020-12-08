@@ -1,28 +1,28 @@
 <template>
   <div id="app">
     <header>
-      <HeaderComponent/>
+      <Header/>
     </header>
     
-    <BodyComponent/>
+    <Body/>
 
     <footer>
-      <FooterComponent/>
+      <Footer/>
     </footer>
   </div>
 </template>
 
 <script>
-import HeaderComponent from './components/HeaderComponent.vue'
-import BodyComponent from './components/BodyComponent.vue'
-import FooterComponent from './components/FooterComponent.vue'
+import Header from './components/Header.vue'
+import Body from './components/Body.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    'HeaderComponent': HeaderComponent,
-    'BodyComponent': BodyComponent,
-    'FooterComponent': FooterComponent
+    'Header': Header,
+    'Body': Body,
+    'Footer': Footer
   }
 }
 </script>
