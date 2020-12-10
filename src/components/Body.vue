@@ -1,9 +1,10 @@
 <template>
     <div>
         <nav>
-            <NavBar :buttons="buttons"/>
+            <NavBar :buttons="buttons" v-on:setBody="updateBody($event)" />
         </nav>
         <div>
+            <h2>The body is now displaying {{ title }}</h2>
             <Content/>
         </div>
     </div>
@@ -21,12 +22,18 @@ export default {
     },
     data() {
         return {
+            title: "HomeHome",
             buttons: [
                 "Home",
                 "About",
                 "Site",
                 "More"
             ]
+        }
+    },
+    methods: {
+        updateBody: function(page) {
+            this.title = page
         }
     }
 }

@@ -1,9 +1,9 @@
 <template>
     <div class="nav-bar">
-        <p>list of navigation buttons</p>
+        <p>{{ title }}</p>
         <ol>
             <div v-for="button in buttons" v-bind:key="button">
-            <nav-button :name=button />
+                <NavButton :name=button v-on:navClick="updateBody($event)" />
             </div>
         </ol>
     </div>
@@ -17,7 +17,18 @@ export default {
     components: {
         'NavButton': NavButton
     },
-    props: ['buttons']
+    props: ['buttons'],
+    data() {
+        return {
+            title: "other things:"
+        }
+    },
+    methods: {
+        updateBody: function(navname) {
+            this.title = navname;
+            this.$emit('setBody', navname)
+        }
+    }
 }
 </script>
 

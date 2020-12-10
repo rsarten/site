@@ -1,7 +1,10 @@
 <template>
+    <!--
     <div class="nav-button">
         <p>{{ name }}</p>
     </div>
+    -->
+    <button v-on:click="navClick()">{{ name }}</button>
 </template>
 
 <script>
@@ -9,9 +12,15 @@ export default {
     name: 'NavButton',
     props: {
         name: name
+    },
+    methods: {
+        navClick: function() {
+            this.$emit('navClick', this.name)
+        }
     }
 }
 </script>
+
 
 <style scoped>
 .nav-button {
